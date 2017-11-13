@@ -1,23 +1,35 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DunderMifflin Inc.</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+	<header class="container">
+    <div class="row">
+      <h1 class="col-sm-6">DunderMifflin Incorperated</h1>
+      <nav class="col-sm-6 text-right">
+        <p> <a href="page 1.html"> Contact Information </a> </p>
+        <p> <a href="page 2.html"> Products and Services </a> </p>
+        <p> <a href="page 3.html"> Meet The Staff </a> </p>
+      </nav>
+    </div>
+  </header>
+  <div class="body">
+	<h2>Who Are We?</h2>
+	<p> Dunder Mifflin Paper Company (also known as Dunder Mifflin, Inc.) is a fictional paper company in the television series The Office. The Scranton, Pennsylvania Branch of Dunder Mifflin serves as the main setting for the series. The company was founded by Robert Dunder and Robert Mifflin. The stock symbol is DMI.</p>
+	<img src="data:image/png;base64,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"/>
+	</div>
+	<!--
+	<div class="nav">
+	<ul>
+	<li><a href="C:\Users\hmaro\Desktop\page 1.html"> Contact Information </a> </li>
+	<li><a href="C:\Users\hmaro\Desktop\page 2.html"> Products and Services </a> </li>
+	<li><a href="C:\Users\hmaro\Desktop\page 3.html"> Meet The Staff </a> </li>
+	</ul>
+	</div>
+	-->
+	</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+	background-color: gainsboro;
+	font-family: Georgia, serif;
+	height: 100%;
+	margin: 1em;
+	text-align: left;
+	width: 100%;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav p {
+  margin-right: 1.5em;
+  outline-style: solid;
+  position: relative;
+}
+header nav p:active {
+	top: 2px;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+.Home {
+	margin: 3em;
+	text-align: Center;
+}
+.Home img {
+	width: 17em;
+}
+.staff li {
+	display: inline;
+}
+.staff img{
+  height:10em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav {
+  margin: auto;
+  padding: .5em;
+  background-color: white;
+  outline-style: solid;
+}
+
+.nav li {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	display: inline;
+	text-align: center;
+	
+}
+.body {
+	text-align: center;
+}
+
+.body p {
+margin: 25px;
+font-size: 1.25em;	
+}
+
+h1 {
+	color: darkblue;
+	font-size: 32px;
+}
+a {
+	color: darkblue;
+	
+}
+a:hover { 
+    color: cadetblue;
+}
+ul {
+	font-size: .5em;
+}
+h2 {
+	color: darkblue;
+	font-size: 56px; 
+}
+
+p {
+	color: darkblue;
+	font-size: 1em;
+}
+
